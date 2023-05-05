@@ -3,249 +3,249 @@
   <robot name="bittle">
 
     <link name="base-frame-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="0.108"/>
         <inertia ixx="0.01562" ixy="0" ixz="-2e-05" iyy="0.00613" iyz="0" izz="0.02107"/>
-      </inertial>
+      </inertial -->
       <visual name="base_frame">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/base_frame.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/base_frame.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="base_frame_c">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/base_frame.001.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/base_frame.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="battery-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="0.056"/>
         <inertia ixx="0.00337" ixy="0" ixz="0" iyy="0.00044" iyz="0.00031" izz="0.00361"/>
-      </inertial>
+      </inertial -->
       <visual name="battery">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/battery.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/battery.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="battery_c">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/battery.001.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/battery.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="cover-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="0.013"/>
         <inertia ixx="0.00039" ixy="0" ixz="0" iyy="0.00057" iyz="0" izz="0.0009"/>
-      </inertial>
+      </inertial -->
       <visual name="cover">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/cover.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/cover.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="cover_c">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/cover.001.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/cover.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="imu_link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="0.001"/>
         <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
+      </inertial -->
       <visual name="imu">
         <origin xyz="0 0 0" rpy="0 0 3.14159"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/Cube.011.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/Cube.011.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
     </link>
 
     <link name="left-back-knee-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="-0.08998 0 -0.14638" rpy="0 0 0"/>
         <mass value="0.017"/>
         <inertia ixx="6e-05" ixy="-2e-05" ixz="0" iyy="0.00065" iyz="-6e-05" izz="0.00063"/>
-      </inertial>
+      </inertial -->
       <visual name="left_back_knee">
         <origin xyz="-0.08998 0 -0.14638" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/left_knee.001.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/left_knee.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="left_back_knee_c">
         <origin xyz="-0.08998 0 -0.14638" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/left_knee.002.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/left_knee.002.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="left-back-shoulder-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 -0.24575 0.04372" rpy="0 0 0"/>
         <mass value="0.006"/>
         <inertia ixx="0.00044" ixy="0" ixz="0" iyy="2e-05" iyz="0" izz="0.00044"/>
-      </inertial>
+      </inertial -->
       <visual name="left_back_shoulder">
         <origin xyz="0 -0.24575 0.04372" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.001.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="left_back_shoulder_c">
         <origin xyz="0 -0.24575 0.04372" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.004.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.004.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="left-front-knee-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="-0.09232 0 -0.14614" rpy="0 0 0"/>
         <mass value="0.017"/>
         <inertia ixx="6e-05" ixy="-2e-05" ixz="0" iyy="0.00065" iyz="-6e-05" izz="0.00063"/>
-      </inertial>
+      </inertial-->
       <visual name="left_front_knee">
         <origin xyz="-0.09232 0 -0.14614" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/left_knee.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/left_knee.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="left_front_knee_c">
         <origin xyz="-0.09232 0 -0.14614" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/left_knee.003.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/left_knee.003.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="left-front-shoulder-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 -0.24575 0.04372" rpy="0 0 0"/>
         <mass value="0.006"/>
         <inertia ixx="0.00044" ixy="0" ixz="0" iyy="2e-05" iyz="0" izz="0.00044"/>
-      </inertial>
+      </inertial-->
       <visual name="left_front_shoulder">
         <origin xyz="0 -0.24575 0.04372" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="left_front_shoulder_c">
         <origin xyz="0 -0.24575 0.04372" rpy="-1.5708 1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.007.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.007.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="mainboard_link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="0.001"/>
         <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
+      </inertial -->
       <visual name="mainboard">
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/Plane.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/Plane.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
     </link>
 
     <link name="right-back-knee-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0.08426 -0.00238 -0.1382" rpy="0 0 0"/>
         <mass value="0.017"/>
         <inertia ixx="6e-05" ixy="-1e-05" ixz="0" iyy="0.00065" iyz="-3e-05" izz="0.00064"/>
-      </inertial>
+      </inertial -->
       <visual name="right_back_knee">
         <origin xyz="0.08426 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/right_knee.001.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/right_knee.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="right_back_knee_c">
         <origin xyz="0.08426 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/right_knee.002.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/right_knee.002.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="right-back-shoulder-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0.24575 0.0777" rpy="0 0 0"/>
         <mass value="0.006"/>
         <inertia ixx="0.00044" ixy="0" ixz="0" iyy="2e-05" iyz="0" izz="0.00044"/>
-      </inertial>
+      </inertial -->
       <visual name="right_back_shoulder">
         <origin xyz="0 0.24575 0.0777" rpy="1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.002.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.002.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="right_back_shoulder_c">
         <origin xyz="0 0.24575 0.0777" rpy="1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.005.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.005.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="right-front-knee-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0.09497 -0.00238 -0.1382" rpy="0 0 0"/>
         <mass value="0.017"/>
         <inertia ixx="6e-05" ixy="-1e-05" ixz="0" iyy="0.00065" iyz="-3e-05" izz="0.00064"/>
-      </inertial>
+      </inertial -->
       <visual name="right_front_knee">
         <origin xyz="0.09497 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/right_knee.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/right_knee.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="right_front_knee_c">
         <origin xyz="0.09497 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/right_knee.003.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/right_knee.003.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
 
     <link name="right-front-shoulder-link">
-      <inertial>
+      <!-- inertial>
         <origin xyz="0 0.24575 0.0777" rpy="0 0 0"/>
         <mass value="0.006"/>
         <inertia ixx="0.00044" ixy="0" ixz="0" iyy="2e-05" iyz="0" izz="0.00044"/>
-      </inertial>
+      </inertial -->
       <visual name="right_front_shoulder">
         <origin xyz="0 0.24575 0.0777" rpy="1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.003.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.003.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="right_front_shoulder_c">
         <origin xyz="0 0.24575 0.0777" rpy="1.5708 -1.5708 0"/>
         <geometry>
-            <mesh filename="file:///home/alina/ros2_ws/install/champ_description_bittle/share/champ_description_bittle/obj/shoulder.006.obj" scale="1.0 1.0 1.0"/>
+            <mesh filename="package://champ_description_bittle/obj/shoulder.006.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
