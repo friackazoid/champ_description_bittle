@@ -76,6 +76,15 @@
       </visual>
     </link>
 
+    <link name="left-back-foot-link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+          <geometry>
+            <cylinder length="0.1" radius="0.02"/>
+          </geometry>
+        </visual>
+    </link>
+
     <link name="left-back-knee-link">
       <!-- inertial>
         <origin xyz="-0.08998 0 -0.14638" rpy="0 0 0"/>
@@ -83,13 +92,14 @@
         <inertia ixx="6e-05" ixy="-2e-05" ixz="0" iyy="0.00065" iyz="-6e-05" izz="0.00063"/>
       </inertial -->
       <visual name="left_back_knee">
-        <origin xyz="-0.08998 0 -0.14638" rpy="-1.5708 1.5708 0"/>
+        <origin xyz="0.0 -0.1 -0.14638" rpy="-1.5708 1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/left_knee.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="left_back_knee_c">
-        <origin xyz="-0.08998 0 -0.14638" rpy="-1.5708 1.5708 0"/>
+          <!-- <origin xyz="-0.08998 0 -0.14638" rpy="-1.5708 1.5708 1.5708"/> -->
+        <origin xyz="0.0 -0.1 -0.14638" rpy="-1.5708 1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/left_knee.002.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -116,6 +126,15 @@
       </collision>
     </link>
 
+    <link name="left-front-foot-link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+          <geometry>
+            <cylinder length="0.1" radius="0.02"/>
+          </geometry>
+        </visual>
+    </link>
+
     <link name="left-front-knee-link">
       <!-- inertial>
         <origin xyz="-0.09232 0 -0.14614" rpy="0 0 0"/>
@@ -123,13 +142,13 @@
         <inertia ixx="6e-05" ixy="-2e-05" ixz="0" iyy="0.00065" iyz="-6e-05" izz="0.00063"/>
       </inertial-->
       <visual name="left_front_knee">
-        <origin xyz="-0.09232 0 -0.14614" rpy="-1.5708 1.5708 0"/>
+        <origin xyz="0.0 -0.1 -0.14614" rpy="-1.5708 1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/left_knee.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="left_front_knee_c">
-        <origin xyz="-0.09232 0 -0.14614" rpy="-1.5708 1.5708 0"/>
+        <origin xyz="0.0 -0.1 -0.14614" rpy="-1.5708 1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/left_knee.003.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -170,6 +189,15 @@
       </visual>
     </link>
 
+    <link name="right-back-foot-link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+          <geometry>
+            <cylinder length="0.1" radius="0.02"/>
+          </geometry>
+        </visual>
+    </link>
+
     <link name="right-back-knee-link">
       <!-- inertial>
         <origin xyz="0.08426 -0.00238 -0.1382" rpy="0 0 0"/>
@@ -177,13 +205,13 @@
         <inertia ixx="6e-05" ixy="-1e-05" ixz="0" iyy="0.00065" iyz="-3e-05" izz="0.00064"/>
       </inertial -->
       <visual name="right_back_knee">
-        <origin xyz="0.08426 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
+        <origin xyz="0.0 -0.09 -0.14638" rpy="1.5708 -1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/right_knee.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="right_back_knee_c">
-        <origin xyz="0.08426 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
+        <origin xyz="0.08426 -0.00238 -0.1382" rpy="1.5708 -1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/right_knee.002.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -210,6 +238,15 @@
       </collision>
     </link>
 
+    <link name="right-front-foot-link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+          <geometry>
+            <cylinder length="0.1" radius="0.02"/>
+          </geometry>
+        </visual>
+    </link>
+
     <link name="right-front-knee-link">
       <!-- inertial>
         <origin xyz="0.09497 -0.00238 -0.1382" rpy="0 0 0"/>
@@ -217,13 +254,13 @@
         <inertia ixx="6e-05" ixy="-1e-05" ixz="0" iyy="0.00065" iyz="-3e-05" izz="0.00064"/>
       </inertial -->
       <visual name="right_front_knee">
-        <origin xyz="0.09497 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
+        <origin xyz="0.0 -0.09 -0.1382" rpy="1.5708 -1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/right_knee.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </visual>
       <collision name="right_front_knee_c">
-        <origin xyz="0.09497 -0.00238 -0.1382" rpy="-1.5708 -1.5708 0"/>
+        <origin xyz="0.0 -0.09 -0.1382" rpy="1.5708 -1.5708 1.5708"/>
         <geometry>
             <mesh filename="package://champ_description_bittle/obj/right_knee.003.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -268,6 +305,13 @@
       <child link="imu_link"/>
     </joint>
 
+    <joint name="left-back-foot-joint" type="fixed">
+      <origin xyz="0.01 -0.5 -0.1" rpy="0 0 0"/>
+      <parent link="left-back-knee-link"/>
+      <child link="left-back-foot-link"/>
+    </joint>
+
+
     <joint name="left-back-knee-joint" type="revolute">
       <origin xyz="0 -0.49172 0" rpy="0 0 0"/>
       <parent link="left-back-shoulder-link"/>
@@ -282,6 +326,12 @@
       <child link="left-back-shoulder-link"/>
       <axis xyz="0 0 1.0"/>
       <limit lower="-1.5708" upper="1.22173" effort="1.0" velocity="1.5708"/>
+    </joint>
+
+    <joint name="left-front-foot-joint" type="fixed">
+      <origin xyz="0.01 -0.5 -0.1" rpy="0 0 0"/>
+      <parent link="left-front-knee-link"/>
+      <child link="left-front-foot-link"/>
     </joint>
 
     <joint name="left-front-knee-joint" type="revolute">
@@ -306,6 +356,12 @@
       <child link="mainboard_link"/>
     </joint>
 
+    <joint name="right-back-foot-joint" type="fixed">
+      <origin xyz="0.01 -0.5 -0.1" rpy="0 0 0"/>
+      <parent link="right-back-knee-link"/>
+      <child link="right-back-foot-link"/>
+    </joint>
+
     <joint name="right-back-knee-joint" type="revolute">
       <origin xyz="0.00015 0.49938 0.03996" rpy="0 0 3.14159"/>
       <parent link="right-back-shoulder-link"/>
@@ -322,6 +378,12 @@
       <limit lower="-1.5708" upper="1.22173" effort="1.0" velocity="1.5708"/>
     </joint>
 
+    <joint name="right-front-foot-joint" type="fixed">
+      <origin xyz="0.01 -0.5 -0.1" rpy="0 0 0"/>
+      <parent link="right-front-knee-link"/>
+      <child link="right-front-foot-link"/>
+    </joint>
+
     <joint name="right-front-knee-joint" type="revolute">
       <origin xyz="6e-05 0.49938 0.03996" rpy="0 0 3.14159"/>
       <parent link="right-front-shoulder-link"/>
@@ -336,6 +398,6 @@
       <child link="right-front-shoulder-link"/>
       <axis xyz="0 0 1.0"/>
       <limit lower="-1.5708" upper="1.22173" effort="1.0" velocity="1.5708"/>
-    </joint>
+  </joint>
 
   </robot>
