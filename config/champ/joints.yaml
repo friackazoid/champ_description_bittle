@@ -1,0 +1,23 @@
+/**:
+  ros__parameters:
+    joints_map:
+      left_front:
+        - left-front-shoulder-joint
+        - left-front-knee-joint
+        - left-front-foot-joint
+
+      right_front:
+        - right-front-shoulder-joint
+        - right-front-knee-joint
+        - right-front-foot-joint
+
+      left_hind:
+        - left-back-shoulder-joint
+        - left-back-knee-joint
+        - left-back-foot-joint
+
+      right_hind:
+        - right-back-shoulder-joint
+        - right-back-knee-joint
+        - right-back-foot-joint
+

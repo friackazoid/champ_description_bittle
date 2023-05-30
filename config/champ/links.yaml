@@ -1,0 +1,24 @@
+/**:
+  ros__parameters:
+    links_map:
+      base: base-frame-link
+      left_front:
+        - left-front-shoulder-link
+        - left-front-knee-link
+        - left-front-foot-link
+
+      right_front:
+        - right-front-shoulder-link
+        - right-front-knee-link
+        - right-front-foot-link
+
+      left_hind:
+        - left-back-shoulder-link
+        - left-back-knee-link
+        - left-back-foot-link
+
+      right_hind:
+        - right-back-shoulder-link
+        - right-back-knee-link
+        - right-back-foot-link
+
